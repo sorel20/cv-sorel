@@ -117,3 +117,87 @@ h2, h3{
     align-items: center;
 }
 
+.container .main {
+    width: 100%;
+    display: flex;
+    /* height: 100vh;
+     min-height: 100vh;*/
+    background-color: var(--dark-red);
+}
+
+
+.container .main .left{
+    width: 35%;
+    margin-top: 10px;
+    /*  min-height: 100vh;
+      height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.container .main .left .left_box h3{
+    background-color: var(--orange-variant);
+    padding: 15px;
+    color: var(--rose-varinat);
+    line-height: 1.1rem;
+    margin-top: 10px;
+}
+
+
+.container .main .left .left_box div p{
+    margin-top: 15px;
+    padding: 15px;
+    line-height: 25px;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.container .main .left .left_box  ul{
+    width: 100%;
+    padding: 30px;
+    color: var(--white);
+}
+
+
+
+
+.container .main .right{
+    width: 65%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    color: var(--rose-varinat);
+    padding: 30px;
+}
+
+
+.container .main .right .right_box{
+    margin-bottom: 20px;
+}
+
+.container .main .right .right_box .title{
+    background-color: var(--orange-variant);
+    padding: 10px;
+    border-left: 10px solid var(--dark-red);
+    margin-bottom: 20px;
+}
+
+.container .main .right .right_box .box_content{
+    margin-bottom: 20px;
+}
+
+.container .main .right .right_box .box_content .intitule,
+.container .main .right .right_box .box_content .date {
+    font-size: 1.1rem;
+    color: var(--rose-varinat);
+    margin-bottom: 10px;
+}
+
+.container .main .right .right_box .box_content .list {
+    padding: 20px;
+    margin-left: 30px;
+
+}
+
