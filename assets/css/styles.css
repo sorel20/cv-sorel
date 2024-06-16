@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Raleway";
+    src: local("../fonts/raleway/Raleway-Black.ttf") , local("../fonts/raleway/Raleway-Light");
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+:root{
+    --dark-red: #782221 ;
+    --orange-variant : #DBC2A4 ;
+    --rose-varinat: #2C1D27 ;
+    --white: #fff ;
+}
+
+body{
+    background-color: var(--white);
+    width: 100%;
+    min-height: 100vh;
+    font-family: Raleway , sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+h2, h3{
+    font-family: Lato, sans-serif;
+}
+.container{
+    width: 1160px;
+    /* min-height: 100vh;
+     height: 100vh;*/
+    background-color: var(--dark-red);
+    color: var(--white);
+    border-right: 1px solid var(--rose-varinat);
+}
+
+.container .profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 250px;
+    padding: 25px;
+}
+
+.profile_infos, .infos_center, .infos_right{
+    position: relative;
+}
+
+.profile_infos .infos_left a:hover, .profile_infos .infos_center a:hover, .profile_infos .infos_right a:hover{
+    text-decoration: underline white;
+}
+
+/*
+
+.infos_left a, .infos_center a, .infos_right a{
+    color: red;
+}
+*/
+
+
+.container .profile .picture_profile img{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    margin-bottom: 10px;
+}
+
+.container .profile .picture_profile span{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    color: #fff;
+    background: #2c1d27;
+    padding: 5px ;
+    border-radius: 6px;
+    width: 120px;
+    text-align: center;
+    visibility: hidden;
+    transition: visibility .2s ease-in-out;
+    font-size: .7rem;
+    z-index: 1;
+}
+
+.container .profile .picture_profile:hover span{
+    visibility: visible;
+}
+.container .profile .profile_name{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+.container .profile .profile_job{
+    font-weight: 500;
+    font-size: .7rem;
+}
+
+.container .profile_infos{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--rose-varinat);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
